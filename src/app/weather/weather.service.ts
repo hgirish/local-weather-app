@@ -1,26 +1,25 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core'
 
 interface ICurrentWeatherData {
   weather: [
     {
-      description: string,
+      description: string
       icon: string
     }
-  ],
+  ]
   main: {
     temp: number
-  },
+  }
   sys: {
     country: string
-  },
-  dt: number,
+  }
+  dt: number
   name: string
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class WeatherService {
-
-  constructor() { }
+  constructor() {}
 }
